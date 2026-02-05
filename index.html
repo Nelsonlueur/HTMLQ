@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app" ng-keyup="$broadcast('my:keyup', $event)">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,7 +26,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
 
     <script>
-      // Firebase 配置
+      // 1. Firebase 配置
       var firebaseConfig = {
         apiKey: "AIzaSyDf2uBe6ZuaKZ7FTYrJS-7fO5zJvIhD6vo",
         authDomain: "q-study-7ac05.firebaseapp.com",
@@ -38,29 +38,13 @@
         measurementId: "G-SNTZKH9W20"
       };
 
-      // 初始化 Firebase
+      // 2. 初始化 Firebase
       firebase.initializeApp(firebaseConfig);
       
-      // 定义全局变量 rootRef 供 htmlq.js 使用
+      // 3. 定义全局变量 rootRef 供 htmlq.js 使用
       var rootRef = firebase.database().ref();
 
-      // 测试数据库连接状态（仅用于调试，完成后可删除）
-      rootRef.once('value').then(function() {
-        console.log("Firebase 数据库连接成功！");
-      }).catch(function(error) {
-        console.error("Firebase 连接失败: ", error.message);
-      });
-    </script>
-
-    <script src="src/htmlq.js" type="text/javascript"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
-    <link rel="stylesheet" href="stylesheets/htmlq.css" />
-
-    </head>
-
-  <body>
-    <div ui-view></div>
-  </body>
-</html>
+      // 4. 强制修复 WebSocket 连通性并接管提交动作
+      console.log("正在尝试建立 Firebase 连接...");
+      
+      rootRef.
