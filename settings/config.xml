@@ -50,7 +50,7 @@
     <note bg="false">Fields marked with an * are mandatory.</note>
   </item>
 
-  <item id="submitUrl">firebase</item>
+  <item id="submitUrl"></item>
   <item id="submitUrlMethod">post</item>
 
   <item id="submitMail"></item>
