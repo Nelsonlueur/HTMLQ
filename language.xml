@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+//
+// In order to translate HtmlQ or to customize the texts,
+// just change the text between the opening and the closing
+// tag. The attribute 'id' is the name of the variable
+// and must remain unchanged.
+//
+// You can use HTML-tags, but you have to braces instead
+// of the normal angle brackets, otherwise the import will fail.
+// Example: {b}bold{/b}
+//
+// If your are using German Umlauts and other special
+// characters, make sure, that you save this XML-file
+// as an UTF-8-document. White-space inbetween the
+// nodes are ignored. Any white-space within the text-
+// nodes, including leading or trailing whitespace and
+// line breaks, is preserved.
+//
+// ===================================================
+//
+-->
+
+<language version="1.0" htmlParse="true">
+
+  <!-- misc -->
+  <item id="btnContinue">继续...</item>
+  <item id="btnclose">关闭</item>
+  <item id="btnHelp">帮助</item>
+  <item id="btnAgreement">同意</item>
+  <item id="btnNeutral">中性</item>
+  <item id="btnDisagreement">不同意</item>
+  <item id="btnTransfer">提交数据</item>
+  <item id="btnMail">通过邮件发送</item>
+  <item id="btnPrint">打印</item>
+  <item id="btnExit">退出</item>
+  <item id="selectItem">请选择...</item>
+
+  <!-- Warning when user is trying to leave the page (this item was added for HtmlQ) -->
+  <item id="leaveSiteWarning">如果现在离开页面，您的结果可能会丢失。</item>
+
+  <!-- HtmlQ only: In-App Back Button -->
+  <item id="backButton">返回</item>
+  <item id="fillInRequiredFields">请填写所有必填项。</item>
+
+  <!-- errors -->
+  <item id="errorHead">错误！</item>
+  <item id="errorWindowTooSmall">请将浏览器窗口最大化后再使用本问卷。</item>
+
+  <!-- welcome screen (leave blank to skip screen) -->
+  <item id="welcomeHead">欢迎参加研究</item>
+  <item id="welcomeText">感谢您参与本研究。本研究关注中国留学生在英国学习与生活过程中获得社会支持的来源与体验。{br}{br}整个过程大约需要10–15分钟。请尽量使用电脑或平板完成，并保持网络稳定。{br}{br}点击“继续”开始。</item>
+
+  <!-- user login, only displayed if access is restricted (see config-file) -->
+  <item id="loginHead">用户编码</item>
+  <item id="loginText">请输入您的用户编码（用于区分不同参与者）。{br}{br}{i}提示：如果研究未启用用户编码，此步骤将不会显示。{/i}</item>
+  <item id="loginFormHeader">用户编码</item>
+  <item id="loginNoInput">请输入用户编码。</item>
+  <item id="loginInvalidInput">用户编码无效</item>
+  <item id="loginNoConnection">连接服务器失败，请稍后再试。</item>
+
+  <!-- introduction (leave blank to skip popup) -->
+  <item id="introHead">研究说明</item>
+  <item id="introText">接下来您将看到一组陈述句。请根据您在英国学习与生活的真实体验，对这些陈述进行排序。{br}{br}排序没有对错之分，只反映您的个人看法与经历。{br}{br}请尽量将浏览器窗口最大化，然后点击“继续”开始。</item>
+
+  <!-- step1: rough sorting into three piles (leave blank to skip popup)-->
+  <item id="step1Head">第1步（共5步）</item>
+  <item id="step1Text">请仔细阅读每一条陈述，并先将它们粗略分成三堆：{br}{br}{b}同意{/b}：您倾向于同意的陈述{br}{b}不同意{/b}：您倾向于不同意的陈述{br}{b}中性{/b}：介于两者之间或不确定的陈述{br}{br}您可以将卡片拖拽到三堆中，也可以使用键盘 1/2/3 快速分类。之后仍可修改。{br}{br}如需再次查看说明，请点击左下角“帮助”。</item>
+
+  <!-- step2: sorting (leave blank to skip popup) -->
+  <item id="step2Head">第2步（共5步）</item>
+  <item id="step2Text">现在开始把卡片放入下方的排序表（从 -4 到 +4）。每一列的格子数量是固定的。{br}{br}请先从“同意”堆中选择您{b}最同意{/b}的两条，放在最右侧 +4 列。{br}再从“不同意”堆中选择您{b}最不同意{/b}的两条，放在最左侧 -4 列。{br}{br}接着选择“次同意/次不同意”的陈述，依次放入 +3/-3、+2/-2、+1/-1。{br}{br}最后将“中性”堆的陈述放入剩余空格（包括 0 列）。{br}{br}您可以随时拖动卡片进行调整。</item>
+
+  <!-- step3: check sorting, only displayed if showStep3== true (see config-file; leave blank to skip popup)-->
+  <item id="step3Head">第3步（共5步）</item>
+  <item id="step3Text">您已完成初步排序。请整体检查一次：两端是否真正放入了您最同意（+4）与最不同意（-4）的陈述？如有需要可继续调整。{br}{br}{i}提示：这是可选步骤，若您在设置中关闭了该步骤，将不会显示。{/i}</item>
+
+  <!-- step4: comments on best/worst rated statements, only displayed if showStep4== true (see config-file; leave blank to skip popup) -->
+  <item id="step4Head">第4步（共5步）</item>
+  <item id="step4Text">请简要说明：为什么您最同意（+4）和最不同意（-4）的陈述会被放在两端？{br}{br}您的解释将帮助我们更好理解您的排序理由。{br}{br}{i}提示：这是可选步骤，若您在设置中关闭了该步骤，将不会显示。{/i}</item>
+
+  <!-- step5: additional questions, only displayed if showStep5== true (see config-file; leave blank to skip popup)-->
+  <item id="step5Head">第5步（共5步）</item>
+  <item id="step5Text">最后，请回答一些背景问题（例如学习阶段、来英时间等）。{br}{br}{i}提示：这是可选步骤，若您在设置中关闭了该步骤，将不会显示。{/i}</item>
+
+  <!-- data transfer, only displayed if submitUrl is not blank (see config-file) -->
+  <item id="transferHead">提交数据</item>
+  <item id="transferText">您已完成排序。请点击提交以保存您的结果。</item>
+  <item id="transferFailed">提交失败。请检查网络后重试；或按提示通过邮件/打印方式提交。</item>
+  <item id="transferOk">感谢您的参与！您的结果已成功提交。现在您可以关闭页面。</item>
+
+  <!-- send data via mail, only displayed if submitUrl is blank (see config-file) -->
+  <item id="mailHead">提交数据</item>
+  <item id="mailText">您可以通过邮件或打印方式提交结果。若选择邮件方式，系统将调用本机邮件客户端；若选择打印方式，请按页面提示操作。</item>
+
+  <!-- e-mail-body -->
+  <item id="mailBody">感谢您参与本研究。请不要修改以下内容：</item>
+
+  <!-- print out -->
+  <item id="printoutText">请按研究者提供的方式提交此打印结果。{br}{br}感谢您的支持！</item>
+
+</language>
